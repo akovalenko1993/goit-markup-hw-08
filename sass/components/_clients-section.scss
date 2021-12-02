@@ -1,0 +1,54 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client__container {
+  flex-direction: column;
+}
+
+.client__title {
+  margin-bottom: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $filter-item-text-color;
+}
+
+.client__list {
+  display: flex;
+}
+
+.client__item {
+  list-style: none;
+}
+
+.client__item + .client__item {
+  margin-left: 30px;
+}
+.client__link {
+  display: block;
+  color: $client-icons-color;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.client__icon {
+  display: block;
+  fill: currentColor;
+}
