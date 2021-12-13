@@ -1,19 +1,18 @@
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding: 60px 0;
 }
 .client__container {
-  flex-direction: column;
+  // flex-direction: column;
 }
 
 .client__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -21,26 +20,52 @@
 }
 
 .client__list {
-  display: flex;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+
+  @include list(flex, wrap, -30px, -30px, null, null, null);
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .client__item {
   list-style: none;
+  @include item(2, 30px, 30px, 30px, null, null, null);
+  @media screen and (min-width: 768px) {
+    @include item(3, 30px, 30px, 30px, null, null, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include item(6, 30px, 30px, 30px, null, null, null);
+  }
 }
 
+// @media screen and (min-width: 480px) {
+//   margin-top: 0;
+// }
+// }
+
 .client__item + .client__item {
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 .client__link {
-  display: block;
+  height: 92px;
+  display: flex;
   color: $client-icons-color;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition-property: color, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:nth-child(2n-1) {
+    // margin-right: 25px;
+  }
+
+  // transition-property: color, border-color;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $accent-color;
@@ -49,6 +74,9 @@
 }
 
 .client__icon {
+  margin: auto auto;
   display: block;
   fill: currentColor;
+  width: 106px;
+  height: 60px;
 }

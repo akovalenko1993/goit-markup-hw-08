@@ -1,14 +1,8 @@
+@import "utils/mixin";
 @import "utils/colors";
 @import "base/normalize";
 @import "base/base-style";
 @import "layouts/page-footer";
-@import "components/logo";
+@import "components/components";
 @import "layouts/hero-section";
 @import "layouts/page-header";
-@import "components/benefits-section";
-@import "components/clients-section";
-@import "components/logo";
-@import "components/product-section";
-@import "components/team-section";
-@import "components/modal";
-@import "components/projects-section";

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>HW-8</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/modern-normalize.css">
         <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header__container container">
         <nav class="header__nav">
         <a href="index.html" class="logo header__logo">Web<span class="logo header__logo--black">Studio</span></a>
         <ul class="nav__list">
@@ -33,7 +33,11 @@
             </svg>
             +38096111 11 11</a></li>
         </ul>
+        <svg class='menu-icon'>
+            <use href="./images/menu_40px.svg#menu-icon"></use>
+        </svg>
         </div>
+        
     </header>
     <main>
 
@@ -41,8 +45,8 @@
 <!--hero section-->
 
 
-<section class="hero">
-    <div class="container hero__container ">
+<section class="hero ">
+    <div class="container hero__container">
     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
     <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
     </div>
@@ -57,37 +61,41 @@
     <h2 hidden>Наши принципы</h2>
     <ul class="benefits__list">
         <li class="benefits__item">
-            <svg class="benefits__icon" width="270" height="120">
+            <div class="benefits__item--mobile">
+            <svg class="benefits__icon">
                 <use href="./images/icons.svg#icon-antena"></use>
             </svg>
-            <!-- </div> -->
+            </div>
             <h3 class="benefits__title">Внимание к деталям</h3>
             <p class="benefits__text"> Идейные соображения, а также начало повседневной работы формированию позиции</p>
         </li>
         <li class="benefits__item">
             <!-- <div> -->
-                <svg class="benefits__icon" width="270" height="120">
+                <div class="benefits__item--mobile">
+                <svg class="benefits__icon">
                 <use href="./images/icons.svg#icon-clock"></use>
             </svg>
-        <!-- </div> -->
+            </div>
             <h3 class="benefits__title">Пунктуальность</h3>
             <p class="benefits__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой</p>
         </li>
         <li class="benefits__item">
             <!-- <div> -->
-                <svg class="benefits__icon" width="270" height="120">
+                <div class="benefits__item--mobile">
+                <svg class="benefits__icon">
                 <use href="./images/icons.svg#icon-diagram"></use>
             </svg>
-        <!-- </div> -->
+        </div>
             <h3 class="benefits__title">Планирование</h3>
             <p class="benefits__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
         <li class="benefits__item">
             <!-- <div> -->
-                <svg class="benefits__icon" width="270" height="120">
+                <div class="benefits__item--mobile">
+                <svg class="benefits__icon">
                 <use href="./images/icons.svg#icon-astronaut"></use>
             </svg>
-        <!-- </div> -->
+        </div>
             <h3 class="benefits__title">Современные технологии</h3>
             <p class="benefits__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
@@ -106,19 +114,19 @@
 <h2 class="product__title">Чем мы занимаемся</h2>
 <ul class="product__list">
     <li class="product__item">
-        <img src="images/img1_HowWeDo.jpg" alt="Человек работает на клаасном рабочем месте" width="370">
+        <img src="images/img1_HowWeDo.jpg" alt="Человек работает на клаасном рабочем месте" >
         <div class="product__layout">
             <p class="product__text">десктопные приложения</p>
         </div>
     </li>
     <li class="product__item">
-        <img src="images/img2_HowWeDo.jpg" alt="Разрабатывается приложение на телефон" width="370">
+        <img src="images/img2_HowWeDo.jpg" alt="Разрабатывается приложение на телефон" >
         <div class="product__layout">
             <p class="product__text">мобильные приложения</p>
         </div>
     </li>
     <li class="product__item">
-        <img src="images/img3_HowWeDo.jpg" alt="Изображение мозаики на планшете" width="370">
+        <img src="images/img3_HowWeDo.jpg" alt="Изображение мозаики на планшете" >
         <div class="product__layout">
             <p class="product__text">дизайнерские решения</p>
         </div>
@@ -325,6 +333,7 @@
 
     <footer class="footer">
         <div class="container footer__container">
+            <div class="footer-for-tablet">
         <div class="contacts">
         <a href="index.html" class="logo footer__logo">Web<span class="logo footer__logo--white">Studio</span></a>
         <address>
@@ -359,6 +368,7 @@
                 </svg>
             </a></li>
     </ul>
+    </div>
     </div>
     <div class="mailing">
         <p class="mailing__title">подпишитесь на рассылку</p>

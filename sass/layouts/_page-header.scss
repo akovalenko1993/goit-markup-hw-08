@@ -1,48 +1,93 @@
 .header {
-  border-bottom: 1px solid #ececec;
+  min-width: 320px;
+  // display: flex;
+  // align-items: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: 479px) {
+    min-width: 320px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    border-bottom: 1px solid #ececec;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .header__container {
   display: flex;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+  // margin: 0 auto;
+  // padding: 10px 15px;
 }
 .header__nav {
-  display: inline-flex;
+  margin-right: auto;
+  // display: inline-flex;
   /* align-items: center; */
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
 }
 
 .nav__list {
-  display: inline-flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__item {
-  list-style: none;
+  @media screen and (min-width: 768px) {
+    list-style: none;
+  }
+
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .nav__item + .nav__item {
-  margin-left: 50px;
+  // margin-left: 50px;
 }
 
 .nav__link {
   position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-decoration: none;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $filter-item-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $filter-item-text-color;
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    // &:hover,
+    // &:focus {
+    //   color: $accent-color;
+    // }
+
+    // outline: 2px solid black;
   }
-
-  /* outline: 2px solid black; */
 }
 
 .nav__link--active {
@@ -62,39 +107,49 @@
 }
 
 .auth__list {
-  display: inline-flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+  // align-items: center;
+  // margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .auth__item {
-  list-style: none;
+  @media screen and (min-width: 768px) {
+    list-style: none;
+  }
 }
 
 .auth__item + .auth__item {
-  margin-left: 50px;
+  // margin-left: 50px;
 }
 
 .auth__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // align-items: center;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
+    text-decoration: none;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+    color: $primary-text-color;
+
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    // &:hover,
+    // &:focus {
+    //   color: $accent-color;
+    // }
   }
 }
 
@@ -104,6 +159,17 @@
 // }
 
 .auth__icon {
-  fill: currentColor;
-  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    fill: currentColor;
+    margin-right: 8px;
+  }
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  fill: black;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
