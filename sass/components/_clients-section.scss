@@ -2,6 +2,9 @@
   // padding-top: 94px;
   // padding-bottom: 94px;
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 .client__container {
   // flex-direction: column;

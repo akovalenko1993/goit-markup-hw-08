@@ -33,10 +33,18 @@
             </svg>
             +38096111 11 11</a></li>
         </ul>
-        <svg class='menu-icon'>
-            <use href="./images/menu_40px.svg#menu-icon"></use>
+        <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="menu-container">
+        <svg width="40" height="40" class="menu-icon" aria-label="Переключатель мобильного меню">
+            <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+            <use href="./images/icons.svg#icon-cross" class="icon-cross"></use>
         </svg>
+        </button>
+
+        <div class="menu-container " id="menu-container" data-menu>
+            контент меню
         </div>
+        </div>
+
         
     </header>
     <main>
@@ -147,7 +155,7 @@
     
     
         <li class="member">
-        <img src="images/img1_OurTeam(1).jpg" alt="Игорь Демьяненко" width="270" class="member__photo">
+        <img src="images/img1_OurTeam_mobile.jpg" alt="Игорь Демьяненко" class="member__photo">
         <div class="member__meta">
         <h3 class="member__name">Игорь Демьяненко</h3>
         <p lang="en" class="member__position">Product Designer</p>
@@ -181,7 +189,7 @@
 
 
     <li class="member">
-            <img src="images/img2_OurTeam(1).jpg" alt="Игорь Демьяненко" width="270" class="member__photo">
+            <img src="images/img2_OurTeam_mobile.jpg" alt="Игорь Демьяненко"  class="member__photo">
             <div class="member__meta">
             <h3 class="member__name">Ольга Репина</h3>
             <p lang="en" class="member__position">Frontend Developer</p>
@@ -217,7 +225,7 @@
 
 
     <li class="member">
-            <img src="images/img3_OurTeam(1).jpg" alt="Игорь Демьяненко" width="270" class="member__photo">
+            <img src="images/img3_OurTeam_mobile.jpg" alt="Игорь Демьяненко"  class="member__photo">
             <div class="member__meta">
             <h3 class="member__name">Николай Тарасов </h3>
             <p lang="en" class="member__position">Marketing</p>
@@ -251,7 +259,7 @@
 
 
     <li class="member">
-            <img src="images/img4_OurTeam(1).jpg" alt="Игорь Демьяненко" width="270" class="member__photo">
+            <img src="images/img4_OurTeam_mobile.jpg" alt="Игорь Демьяненко"  class="member__photo">
             <div class="member__meta">
             <h3 class="member__name">Михаил Ермаков</h3>
             <p lang="en" class="member__position">UI Designer</p>
@@ -441,5 +449,6 @@
         </div>
     </div>
     <script src="js/modal.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

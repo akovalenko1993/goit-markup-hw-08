@@ -1,14 +1,15 @@
 .footer {
+  background-color: $bcg-color;
 }
 
 .footer__container {
-  background-color: $bcg-color;
-
   padding-top: 60px;
   padding-bottom: 60px;
-  // display: flex;
-  // align-items: baseline;
-  // justify-content: space-around;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .footer-for-tablet {
@@ -21,10 +22,17 @@
     align-items: baseline;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .contacts {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
   }
 }
 
@@ -50,6 +58,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $primary-white-color;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__list {
@@ -70,6 +81,9 @@
 
 .contacts__item:not(:last-child) {
   margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -80,17 +94,20 @@
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 
-  //   transition-property: color;
-  //   transition-duration: 250ms;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  //   &:hover,
-  //   &:focus {
-  //     color: $accent-color;
-  //   }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .join {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .join__title {
@@ -102,6 +119,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-white-color;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .join__list {
@@ -131,13 +151,13 @@
   background-color: rgba(255, 255, 255, 0.1);
   color: $primary-white-color;
 
-  // transition-property: background-color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // &:hover,
-  // &:focus {
-  //   background-color: $accent-color;
-  // }
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .join__icon {
@@ -159,19 +179,25 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-white-color;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .mailing__form {
   // display: flex;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .mailing__input {
-  // padding-left: 16px;
+  padding: 15px 16px;
   margin-bottom: 20px;
 
   min-width: 320px;
-  width: 450px;
+  width: 100%;
   height: 50px;
 
   background-color: $bcg-color;
@@ -188,6 +214,13 @@
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .mailing__button {
