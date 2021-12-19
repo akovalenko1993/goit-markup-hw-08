@@ -30,7 +30,7 @@ img {
   // width: 100%;
   margin-left: auto;
   margin-right: auto;
-
+  min-width: 320px;
   // outline: 2px solid yellow;
   @media screen and (min-width: 480px) {
     width: 480px;
