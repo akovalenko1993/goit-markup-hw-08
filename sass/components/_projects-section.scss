@@ -145,6 +145,9 @@
   position: relative;
   overflow: hidden;
   border: none;
+  img {
+    width: 100%;
+  }
 }
 
 .card__description {
@@ -155,6 +158,7 @@
   transform: translateY(101%);
   padding: 49px 24px 49px 24px;
   background-color: rgba(33, 150, 243, 0.9);
+  overflow: scroll;
   box-sizing: border-box;
   font-weight: normal;
   font-size: 18px;
