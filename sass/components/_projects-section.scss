@@ -19,10 +19,16 @@
   flex-wrap: wrap;
   margin-right: -8px;
   margin-bottom: -15px;
-  // margin-bottom: 40px;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 25px;
+  }
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
@@ -30,6 +36,9 @@
   margin-right: 8px;
   margin-bottom: 15px;
   list-style: none;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .projects__item:not(:last-child) {
   // margin-right: 8px;
@@ -77,7 +86,7 @@
 }
 
 .projects__list {
-  margin-top: 40px;
+  // margin-top: 40px;
   // align-content: stretch;
   @media screen and (max-width: 767px) {
     margin-bottom: -30px;

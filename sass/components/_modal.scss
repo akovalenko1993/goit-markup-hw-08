@@ -39,6 +39,9 @@
   // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   //   0px 2px 1px rgba(0, 0, 0, 0.2);
   // border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    max-width: 530px;
+  }
 }
 
 .form {
@@ -54,7 +57,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $filter-item-text-color;
-  // margin-bottom: 12px;
+  margin-bottom: 12px;
   // font-weight: bold;
   // font-size: 20px;
   // line-height: 1.15;
@@ -171,6 +174,11 @@
     background-size: contain;
     border-radius: 2px;
   }
+}
+
+.policy__input:hover + .policy__icon,
+.policy__input:focus + .policy__icon {
+  fill: $accent-color;
 }
 
 .policy__icon {

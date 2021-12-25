@@ -1,15 +1,17 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $bcg-color;
   min-width: 320px;
 }
 
 .footer__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -19,7 +21,7 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     margin-bottom: 60px;
   }
@@ -34,6 +36,13 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    // text-align: left;
+  }
+}
+.contacts * {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 
@@ -41,9 +50,12 @@
   display: block;
   margin: 0 auto 20px;
   text-align: center;
-  // margin-bottom: 20px;
-  // display: inline-block;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
+
 .logo.footer__logo--white {
   color: $primary-white-color;
 }
@@ -70,8 +82,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -88,7 +98,6 @@
 }
 
 .contacts__item:not(:last-child) {
-  // margin-bottom: 9px;
 }
 
 .contacts__link {
@@ -106,9 +115,6 @@
 }
 
 .join {
-  // @media screen and (max-width: 767px) {
-  //   margin-bottom: 60px;
-  // }
 }
 
 .join__title {
@@ -128,7 +134,6 @@
 .join__list {
   display: flex;
   justify-content: center;
-  // margin: 0 auto;
 }
 
 .join__item {
@@ -139,7 +144,6 @@
 }
 
 .join__item + .join__item {
-  // margin-left: 10px;
 }
 
 .join__link {
@@ -186,7 +190,6 @@
 }
 
 .mailing__form {
-  // display: flex;
   text-align: center;
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -197,7 +200,6 @@
   padding: 15px 16px;
   margin-bottom: 20px;
 
-  // min-width: 320px;
   width: 100%;
   height: 50px;
 
@@ -225,7 +227,6 @@
 }
 
 .mailing__button {
-  // margin-left: 12px;
   margin: 0 auto;
   font-weight: bold;
   font-size: 16px;
@@ -241,13 +242,13 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  // transition-property: background-color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  // &:hover,
-  // &:focus {
-  //   background-color: $hero-button-accent-bcg-color;
-  // }
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $hero-button-accent-bcg-color;
+  }
 }
 
 .mailing__icon {

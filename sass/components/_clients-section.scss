@@ -21,6 +21,16 @@
   letter-spacing: 0.03em;
 
   color: $filter-item-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+  }
 }
 
 .client__list {
@@ -69,9 +79,9 @@
     // margin-right: 25px;
   }
 
-  // transition-property: color, border-color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $accent-color;

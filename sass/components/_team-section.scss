@@ -23,12 +23,15 @@
     null,
     $filter-item-text-color
   );
-  // font-weight: bold;
-  // font-size: 28px;
-  // line-height: 33px;
   text-align: center;
-  // letter-spacing: 0.03em;
-  // color: $filter-item-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
